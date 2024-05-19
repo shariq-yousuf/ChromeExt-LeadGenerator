@@ -1,0 +1,94 @@
+:root {
+    --lightBlue: rgba(191, 219,254);
+    --blue: rgba(59 130 246);
+    --blue-hover: rgb(150, 186, 243);
+    --grey-hover: rgb(111, 111, 111);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    background-color: black;
+    color: white;
+}
+
+input {
+    color: black;
+    background-color: var(--lightBlue);
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid var(--blue);
+    margin-bottom: 6px;
+}
+
+#input-btn, #tab-btn {
+    background: var(--blue);
+    color: white;
+    padding: 8px 20px;
+    border: 4px solid var(--blue);
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+#input-btn:hover, #tab-btn:hover{
+    /* background-color: var(--blue-hover); */
+    border-radius: 10px;
+}
+
+#delete-btn {
+    background: black;
+    color: var(--blue);
+    padding: 8px 18.7px;
+    border: 4px solid var(--blue);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#delete-btn:hover {
+    /* background-color: var(--grey-hover); */
+    border-radius: 15px;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+li {
+    margin-top: 5px;
+}
+
+a {
+    color: var(--lightBlue);
+    text-decoration: none;
+    display: block;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.del-div {
+    display: inline;
+    position: relative;
+    left: 102px;
+}
+
+.del-div p {
+    position: absolute;
+    top: 23px;
+    left: 2px;
+    font-size: 12px;
+    color: red;
+}
